@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import Logo from "../../Icons/Logo.svg";
-import List from "../../Icons/List.svg";
 import NavigationList from "./NavigationList";
 
 const Navigation = () => {

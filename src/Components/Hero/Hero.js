@@ -37,11 +37,7 @@ const Hero = () => {
               Space Walking
             </h5>
             <div className="flex items-center gap-3">
-              <img
-                src={AnimaKid}
-                alt="AnimaKid user profil image"
-                className="w-6"
-              />
+              <img src={AnimaKid} alt="AnimaKid user profil" className="w-6" />
               <p className="text-[14px] text-white font-work opacity-80">
                 AnimaKid
               </p>
