@@ -5,7 +5,7 @@ const NavigationItem = (props) => {
     <li
       className={`font-work font-semibold text-base text-white opacity-0 -translate-x-5 min-[900px]:translate-x-0 min-[900px]:-translate-y-5 transition-colors ${props.className} hover:text-cta group`}
     >
-      <a href="#">{props.children}</a>
+      <button>{props.children}</button>
     </li>
   );
 };

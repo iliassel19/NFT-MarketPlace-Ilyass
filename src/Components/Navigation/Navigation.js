@@ -9,12 +9,9 @@ const Navigation = () => {
   };
   return (
     <div className="pt-8 px-6 max-w-[1340px] mx-auto xl:px-20 2xl:px-24 flex items-center justify-between">
-      <a
-        href="#"
-        className="opacity-0 animate-show transition-transform hover:scale-110"
-      >
+      <button className="opacity-0 animate-show transition-transform hover:scale-110">
         <img src={Logo} alt="Logo" />
-      </a>
+      </button>
       <NavigationList menuState={openNav} />
       <button
         className="z-40 w-9 h-9 relative overflow-hidden min-[900px]:hidden"
