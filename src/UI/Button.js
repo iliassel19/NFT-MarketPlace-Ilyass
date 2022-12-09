@@ -8,7 +8,7 @@ const Button = (props) => {
       } ${
         props.filled
           ? "bg-cta hover:bg-cta-h"
-          : "border border-cta bg-opacity-0 hover:bg-opacity-100"
+          : "border-[2px] border-cta opacity-100 hover:bg-bgSec"
       }`}
     >
       {props.children}
