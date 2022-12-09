@@ -9,12 +9,12 @@ import HeroStates from "./HeroStates";
 const Hero = () => {
   return (
     <Container>
-      <div className="flex flex-col items-start md:flex-row md:gap-8 lg:gap-12">
-        <div className="self-center">
+      <div className="flex flex-col items-start md:flex-row md:items-center md:gap-8">
+        <div className="">
           <h1 className="text-h3 leading-tight md:text-[48px] lg:text-[80px] text-white capitalize font-work font-regular tracking-tighter md:leading-[1.05] mb-6 font-medium">
             Discover digital art & collect NFTs
           </h1>
-          <p className="text-[18px] lg:text-base font-work text-white opacity-90 capitalize mb-6">
+          <p className="w-full text-h5 font-work text-white opacity-90 capitalize mb-6">
             NFT Market UI created with anima for figma. collect, but and sell
             art from more than 20k NFT artists.
           </p>
