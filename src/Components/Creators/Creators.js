@@ -12,7 +12,7 @@ import Avatar7 from "../../Images/Avatars/Avatar7.png";
 import Avatar8 from "../../Images/Avatars/Avatar8.png";
 import Avatar9 from "../../Images/Avatars/Avatar9.png";
 import Avatar14 from "../../Images/Avatars/Avatar14.png";
-import Avatar15 from "../../Images/Avatars/Avatar15.png";
+// import Avatar15 from "../../Images/Avatars/Avatar15.png";
 import Avatar17 from "../../Images/Avatars/Avatar17.png";
 import CreatorCard from "./CreatorCard";
 
@@ -68,11 +68,11 @@ const Creators = () => {
       user: "AnimaKid",
       profil: Avatar14,
     },
-    {
-      id: 11,
-      user: "Dotgu",
-      profil: Avatar15,
-    },
+    // {
+    //   id: 11,
+    //   user: "Dotgu",
+    //   profil: Avatar15,
+    // },
     {
       id: 12,
       user: "Ghiblier",
