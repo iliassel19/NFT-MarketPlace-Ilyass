@@ -12,7 +12,7 @@ import Avatar7 from "../../Images/Avatars/Avatar7.png";
 import Avatar8 from "../../Images/Avatars/Avatar8.png";
 import Avatar9 from "../../Images/Avatars/Avatar9.png";
 import Avatar14 from "../../Images/Avatars/Avatar14.png";
-// import Avatar15 from "../../Images/Avatars/Avatar15.png";
+import Avatar15 from "../../Images/Avatars/Avatar15.png";
 import Avatar17 from "../../Images/Avatars/Avatar17.png";
 import CreatorCard from "./CreatorCard";
 
@@ -21,62 +21,62 @@ const Creators = () => {
     {
       id: 1,
       user: "Keepitreal",
-      profil: Avatar1,
+      profil: { Avatar1 },
     },
     {
       id: 2,
       user: "DigiLab",
-      profil: Avatar2,
+      profil: { Avatar2 },
     },
     {
       id: 3,
       user: "GravityOne",
-      profil: Avatar3,
+      profil: { Avatar3 },
     },
     {
       id: 4,
       user: "Juanie",
-      profil: Avatar4,
+      profil: { Avatar4 },
     },
     {
       id: 5,
       user: "BlueWhale",
-      profil: Avatar5,
+      profil: { Avatar5 },
     },
     {
       id: 6,
       user: "Mr Fox",
-      profil: Avatar6,
+      profil: { Avatar6 },
     },
     {
       id: 7,
       user: "Shroomie",
-      profil: Avatar7,
+      profil: { Avatar7 },
     },
     {
       id: 8,
       user: "Robotica",
-      profil: Avatar8,
+      profil: { Avatar8 },
     },
     {
       id: 9,
       user: "RustyRobot",
-      profil: Avatar9,
+      profil: { Avatar9 },
     },
     {
       id: 10,
       user: "AnimaKid",
-      profil: Avatar14,
+      profil: { Avatar14 },
     },
-    // {
-    //   id: 11,
-    //   user: "Dotgu",
-    //   profil: Avatar15,
-    // },
+    {
+      id: 11,
+      user: "Dotgu",
+      profil: { Avatar15 },
+    },
     {
       id: 12,
       user: "Ghiblier",
-      profil: Avatar17,
+      profil: { Avatar17 },
     },
   ];
   return (
@@ -101,7 +101,7 @@ const Creators = () => {
         {users.map((user) => (
           <CreatorCard
             key={user.id}
-            profil={user.profil}
+            profil={[...Object.values(user.profil)]}
             id={user.id}
             user={user.user}
           />
