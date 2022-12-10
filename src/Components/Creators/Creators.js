@@ -81,16 +81,16 @@ const Creators = () => {
   ];
   return (
     <Container>
-      <div className="grid grid-cols-4 gap-6">
-        <div className="col-span-3">
-          <h2 className="text-h3 text-white capitalize font-work font-semibold">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 xl:grid-cols-4 md:gap-6">
+        <div className="lg:col-span-2 xl:col-span-3">
+          <h2 className="text-h4 lg:text-h3 text-white capitalize font-work font-semibold">
             Top creators
           </h2>
-          <p className="text-[18px] capitalize text-white opacity-80">
+          <p className="text-base lg:text-[18px] capitalize text-white opacity-80">
             Checkout Top rated creators on the NFT marketplace
           </p>
         </div>
-        <Button filled={false}>
+        <Button filled={false} className="order-6 sm:order-[unset]">
           <img
             src={RocketLaunch}
             alt="Rocket launch icon."

@@ -13,13 +13,13 @@ import TertiaryRobotImg from "../../Images/Tertiary-Robot-img.png";
 const Trending = () => {
   return (
     <Container>
-      <h2 className="text-h3 text-white capitalize font-work font-semibold">
+      <h2 className="text-h4 lg:text-h3 text-white capitalize font-work font-semibold">
         Trending collection
       </h2>
-      <p className="text-[18px] capitalize text-white opacity-80">
+      <p className="text-base lg:text-[18px] capitalize text-white opacity-80">
         Checkout our weekly updated trending collection
       </p>
-      <div className="flex items-center gap-4 lg:gap-6 mt-16 justify-start md:gap-8">
+      <div className="flex items-center gap-4 lg:gap-6 lg:mt-16 mt-12 justify-start md:gap-8">
         <TrendingCollection
           primaryImg={PrimaryAnimalImg}
           secondaryImg={SecondaryAnimalImg}

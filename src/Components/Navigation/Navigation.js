@@ -8,7 +8,7 @@ const Navigation = () => {
     isOpenNav((prevState) => !prevState);
   };
   return (
-    <div className="pt-8 px-6 max-w-[1340px] mx-auto xl:px-20 2xl:px-24 flex items-center justify-between">
+    <div className="py-8 px-6 max-w-[1340px] mx-auto xl:px-20 2xl:px-24 flex items-center justify-between">
       <button className="opacity-0 animate-show transition-transform hover:scale-110">
         <img src={Logo} alt="Logo" />
       </button>
