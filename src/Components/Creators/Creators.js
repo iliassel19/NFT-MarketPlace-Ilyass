@@ -99,7 +99,12 @@ const Creators = () => {
           <p>View rankings</p>
         </Button>
         {users.map((user) => (
-          <CreatorCard profil={user.profil} id={user.id} user={user.user} />
+          <CreatorCard
+            key={user.id}
+            profil={user.profil}
+            id={user.id}
+            user={user.user}
+          />
         ))}
       </div>
     </Container>
