@@ -16,7 +16,7 @@ const CreatorCard = (props) => {
           alt={`${props.user} profil.`}
           className="w-14 h-14 lg:w-24 lg:h-24"
         />
-        <div>
+        <div className="xl:text-center">
           <h4 className="text-[18px] text-white font-work mt-3 mb-2">
             {props.user}
           </h4>

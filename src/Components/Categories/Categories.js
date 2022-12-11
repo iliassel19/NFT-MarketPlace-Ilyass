@@ -71,6 +71,10 @@ const Categories = () => {
 
   return (
     <Container>
+      <h2 className="text-h4 lg:text-h3 text-white capitalize font-work font-semibold mb-6">
+        Browse categories
+      </h2>
+
       <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] min-[900px]:grid-cols-4 gap-6">
         {categories.map((category) => (
           <CategoryCard
