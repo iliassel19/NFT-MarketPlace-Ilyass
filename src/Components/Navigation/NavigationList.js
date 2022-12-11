@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationItem from "./NavigationItem";
 import Button from "../../UI/Button";
-import User from "../../Icons/User.svg";
+// import User from "../../Icons/User.svg";
 const NavigationList = (props) => {
   return (
     <nav
@@ -41,7 +41,7 @@ const NavigationList = (props) => {
             "animate-[show_0.2s_1s_ease-out_forwards] min-[900px]:animate-none"
           } min-[900px]:animate-[fromTop_0.3s_0.9s_ease-in_forwards]`}
         >
-          <img src={User} alt="User icon" className="w-6 h-6" />
+          <img src="./Icons/User.svg" alt="User icon" className="w-6 h-6" />
           <p>Sign up</p>
         </Button>
       </ul>

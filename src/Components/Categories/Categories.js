@@ -1,71 +1,71 @@
 import React from "react";
 import Container from "../../UI/Container";
 import CategoryCard from "./CategoryCard";
-import ArtImg from "../../Images/Art-img.png";
-import CollectiblesImg from "../../Images/Collectibles-img.png";
-import MusicImg from "../../Images/Music-img.png";
-import PhotographyImg from "../../Images/Photography-img.png";
-import VideoImg from "../../Images/Video-img.png";
-import UtilityImg from "../../Images/Utility-img.png";
-import SportImg from "../../Images/Sport-img.png";
-import VirtualWorldsImg from "../../Images/VirtualWorlds-img.png";
-import Camera from "../../Icons/Camera.svg";
-import Basketball from "../../Icons/Basketball.svg";
-import MusicNotes from "../../Icons/MusicNotes.svg";
-import VideoCamera from "../../Icons/VideoCamera.svg";
-import Planet from "../../Icons/Planet.svg";
-import PaintBrush from "../../Icons/PaintBrush.svg";
-import MagicWand from "../../Icons/MagicWand.svg";
-import Swatches from "../../Icons/Swatches.svg";
+// import ArtImg from "../../Images/Art-img.png";
+// import CollectiblesImg from "../../Images/Collectibles-img.png";
+// import MusicImg from "../../Images/Music-img.png";
+// import PhotographyImg from "../../Images/Photography-img.png";
+// import VideoImg from "../../Images/Video-img.png";
+// import UtilityImg from "../../Images/Utility-img.png";
+// import SportImg from "../../Images/Sport-img.png";
+// import VirtualWorldsImg from "../../Images/VirtualWorlds-img.png";
+// import Camera from "../../Icons/Camera.svg";
+// import Basketball from "../../Icons/Basketball.svg";
+// import MusicNotes from "../../Icons/MusicNotes.svg";
+// import VideoCamera from "../../Icons/VideoCamera.svg";
+// import Planet from "../../Icons/Planet.svg";
+// import PaintBrush from "../../Icons/PaintBrush.svg";
+// import MagicWand from "../../Icons/MagicWand.svg";
+// import Swatches from "../../Icons/Swatches.svg";
 const Categories = () => {
   const categories = [
     {
       id: 1,
       category: "art",
-      icon: { PaintBrush },
-      img: { ArtImg },
+      icon: "./Icons/PaintBrush.svg",
+      img: "./Images/Art-img.png",
     },
     {
       id: 2,
       category: "collectibles",
-      icon: { Swatches },
-      img: { CollectiblesImg },
+      icon: "./Icons/Swatches.svg",
+      img: "./Images/Collectibles-img.png",
     },
     {
       id: 3,
       category: "music",
-      icon: { MusicNotes },
-      img: { MusicImg },
+      icon: "./Icons/MusicNotes.svg",
+      img: "./Images/Music-img.png",
     },
     {
       id: 4,
       category: "photography",
-      icon: { Camera },
-      img: { PhotographyImg },
+      icon: "./Icons/Camera.svg",
+      img: "./Images/Photography-img.png",
     },
     {
       id: 5,
       category: "video",
-      icon: { VideoCamera },
-      img: { VideoImg },
+      icon: "./Icons/VideoCamera.svg",
+      img: "./Images/Video-img.png",
     },
     {
       id: 6,
       category: "utility",
-      icon: { MagicWand },
-      img: { UtilityImg },
+      icon: "./Icons/MagicWand.svg",
+      img: "./Images/Utility-img.png",
     },
     {
       id: 7,
       category: "sport",
-      icon: { Basketball },
-      img: { SportImg },
+      icon: "./Icons/Basketball.svg",
+      img: "./Images/Sport-img.png",
     },
     {
       id: 8,
       category: "virtual worlds",
-      icon: { Planet },
-      img: { VirtualWorldsImg },
+      icon: "./Icons/Planet.svg",
+      img: "./Images/VirtualWorlds-img.png",
     },
   ];
 
@@ -79,9 +79,8 @@ const Categories = () => {
         {categories.map((category) => (
           <CategoryCard
             key={category.id}
-            img={[...Object.values(category.img)]}
-            icon={[...Object.values(category.icon)]}
-            iconAlt={[...Object.keys(category.icon)]}
+            img={category.img}
+            icon={category.icon}
             category={category.category}
           />
         ))}

@@ -10,7 +10,7 @@ const CategoryCard = (props) => {
           className="h-full w-full object-cover blur-sm"
         />
         <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center">
-          <img src={props.icon} alt={`${props.iconAlt} icon`} />
+          <img src={props.icon} alt={`${props.category} icon`} />
         </div>
       </div>
       <div className="p-6">

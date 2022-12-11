@@ -1,82 +1,82 @@
 import React from "react";
 import Container from "../../UI/Container";
 import Button from "../../UI/Button";
-import RocketLaunch from "../../Icons/RocketLaunch1.svg";
+// import RocketLaunch from "../../Icons/RocketLaunch1.svg";
 import CreatorCard from "./CreatorCard";
-import Avatar1 from "../../Images/Avatars/Avatar1.png";
-import Avatar2 from "../../Images/Avatars/Avatar2.png";
-import Avatar3 from "../../Images/Avatars/Avatar3.png";
-import Avatar4 from "../../Images/Avatars/Avatar4.png";
-import Avatar5 from "../../Images/Avatars/Avatar5.png";
-import Avatar6 from "../../Images/Avatars/Avatar6.png";
-import Avatar7 from "../../Images/Avatars/Avatar7.png";
-import Avatar8 from "../../Images/Avatars/Avatar8.png";
-import Avatar9 from "../../Images/Avatars/Avatar9.png";
-import Avatar14 from "../../Images/Avatars/Avatar14.png";
-import Avatar15 from "../../Images/Avatars/Avatar15.png";
-import Avatar17 from "../../Images/Avatars/Avatar17.png";
+// import Avatar1 from "../../Images/Avatars/Avatar1.png";
+// import Avatar2 from "../../Images/Avatars/Avatar2.png";
+// import Avatar3 from "../../Images/Avatars/Avatar3.png";
+// import Avatar4 from "../../Images/Avatars/Avatar4.png";
+// import Avatar5 from "../../Images/Avatars/Avatar5.png";
+// import Avatar6 from "../../Images/Avatars/Avatar6.png";
+// import Avatar7 from "../../Images/Avatars/Avatar7.png";
+// import Avatar8 from "../../Images/Avatars/Avatar8.png";
+// import Avatar9 from "../../Images/Avatars/Avatar9.png";
+// import Avatar14 from "../../Images/Avatars/Avatar14.png";
+// import Avatar15 from "../../Images/Avatars/Avatar15.png";
+// import Avatar17 from "../../Images/Avatars/Avatar17.png";
 
 const Creators = () => {
   const users = [
     {
       id: "c1",
       user: "Keepitreal",
-      profil: { Avatar1 },
+      profil: "./Images/Avatars/Avatar1.png",
     },
     {
       id: "c2",
       user: "DigiLab",
-      profil: { Avatar2 },
+      profil: "./Images/Avatars/Avatar2.png",
     },
     {
       id: "c3",
       user: "GravityOne",
-      profil: { Avatar3 },
+      profil: "./Images/Avatars/Avatar3.png",
     },
     {
       id: "c4",
       user: "Juanie",
-      profil: { Avatar4 },
+      profil: "./Images/Avatars/Avatar4.png",
     },
     {
       id: "c5",
       user: "BlueWhale",
-      profil: { Avatar5 },
+      profil: "./Images/Avatars/Avatar5.png",
     },
     {
       id: "c6",
       user: "Mr Fox",
-      profil: { Avatar6 },
+      profil: "./Images/Avatars/Avatar6.png",
     },
     {
       id: "c7",
       user: "Shroomie",
-      profil: { Avatar7 },
+      profil: "./Images/Avatars/Avatar7.png",
     },
     {
       id: "c8",
       user: "Robotica",
-      profil: { Avatar8 },
+      profil: "./Images/Avatars/Avatar8.png",
     },
     {
       id: "c9",
       user: "RustyRobot",
-      profil: { Avatar9 },
+      profil: "./Images/Avatars/Avatar9.png",
     },
     {
       id: "c10",
       user: "AnimaKid",
-      profil: { Avatar14 },
+      profil: "./Images/Avatars/Avatar14.png",
     },
     {
       id: "c11",
       user: "Dotgu",
-      profil: { Avatar15 },
+      profil: "./Images/Avatars/Avatar15.png",
     },
     {
       id: "c12",
       user: "Ghiblier",
-      profil: { Avatar17 },
+      profil: "./Images/Avatars/Avatar17.png",
     },
   ];
   return (
@@ -92,7 +92,7 @@ const Creators = () => {
         </div>
         <Button filled={false} className="order-6 sm:order-[unset]">
           <img
-            src={RocketLaunch}
+            src="./Icons/RocketLaunch1.svg"
             alt="Rocket launch icon."
             className="w-5 h-5"
           />
@@ -101,7 +101,7 @@ const Creators = () => {
         {users.map((user, i) => (
           <CreatorCard
             key={user.id}
-            profil={[...Object.values(user.profil)]}
+            profil={user.profil}
             id={i + 1}
             user={user.user}
           />

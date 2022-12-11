@@ -2,33 +2,33 @@ import React from "react";
 import Button from "../../UI/Button";
 import Container from "../../UI/Container";
 import NFTCard from "./NFTCard";
-import Eye from "../../Icons/Eye.svg";
-import Avatar10 from "../../Images/Avatars/Avatar10.png";
-import Avatar15 from "../../Images/Avatars/Avatar15.png";
-import Avatar16 from "../../Images/Avatars/Avatar16.png";
-import AstrofictionImg from "../../Images/Astrofiction-img.png";
-import DistantGalaxyImg from "../../Images/DistantGalaxy-img.png";
-import LifeEdenaImg from "../../Images/LifeEdena-img.png";
+// import Eye from "../../Icons/Eye.svg";
+// import Avatar10 from "../../Images/Avatars/Avatar10.png";
+// import Avatar15 from "../../Images/Avatars/Avatar15.png";
+// import Avatar16 from "../../Images/Avatars/Avatar16.png";
+// import AstrofictionImg from "../../Images/Astrofiction-img.png";
+// import DistantGalaxyImg from "../../Images/DistantGalaxy-img.png";
+// import LifeEdenaImg from "../../Images/LifeEdena-img.png";
 
 const NFTData = [
   {
     title: "Distant Galaxy",
-    img: { DistantGalaxyImg },
-    profil: { Avatar16 },
+    img: "./Images/DistantGalaxy-img.png",
+    profil: "./Images/Avatars/Avatar16.png",
     name: "MoonDancer",
     className: "",
   },
   {
     title: "Life On Edena",
-    img: { LifeEdenaImg },
-    profil: { Avatar10 },
+    img: "./Images/LifeEdena-img.png",
+    profil: "./Images/Avatars/Avatar10.png",
     name: "NebulaKid",
     className: "",
   },
   {
     title: "AstroFiction",
-    img: { AstrofictionImg },
-    profil: { Avatar15 },
+    img: "./Images/Astrofiction-img.png",
+    profil: "./Images/Avatars/Avatar15.png",
     name: "Spaceone",
     className: "sm:hidden min-[900px]:flex",
   },
@@ -49,15 +49,15 @@ const NFTs = () => {
           filled={false}
           className="order-10 sm:order-[unset] md:w-[220px] sm:justify-self-end"
         >
-          <img src={Eye} alt="Eye icon" className="w-6 h-6" />
+          <img src="./Icons/Eye.svg" alt="Eye icon" className="w-6 h-6" />
           <p>See all</p>
         </Button>
         {NFTData.map((NFT, i) => (
           <NFTCard
             key={`${i + 2} nft`}
             title={NFT.title}
-            img={[...Object.values(NFT.img)]}
-            profil={[...Object.values(NFT.profil)]}
+            img={NFT.img}
+            profil={NFT.profil}
             name={NFT.name}
             className={NFT.className}
           />

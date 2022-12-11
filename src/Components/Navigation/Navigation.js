@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import Logo from "../../Icons/Logo.svg";
+// import Logo from "../../Icons/Logo.svg";
 import NavigationList from "./NavigationList";
 
 const Navigation = () => {
@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <div className="py-8 px-6 max-w-[1340px] mx-auto xl:px-20 2xl:px-24 flex items-center justify-between h-[100px] min-[900px]:h-auto">
       <button className="opacity-0 animate-show transition-transform hover:scale-110">
-        <img src={Logo} alt="Logo" />
+        <img src="./Icons/Logo.svg" alt="Logo" />
       </button>
       <NavigationList menuState={openNav} />
       <button

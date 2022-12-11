@@ -2,9 +2,9 @@ import React from "react";
 import Container from "../../UI/Container";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
-import RocketLaunch from "../../Icons/RocketLaunch.svg";
-import HeroImg from "../../Images/Hero-img.png";
-import AnimaKid from "../../Images/Avatars/Avatar14.png";
+// import RocketLaunch from "../../Icons/RocketLaunch.svg";
+// import HeroImg from "../../Images/Hero-img.png";
+// import AnimaKid from "../../Images/Avatars/Avatar14.png";
 import HeroStates from "./HeroStates";
 const Hero = () => {
   return (
@@ -19,7 +19,11 @@ const Hero = () => {
             art from more than 20k NFT artists.
           </p>
           <Button filled={true} className="opacity-100 hidden md:flex">
-            <img src={RocketLaunch} alt="Rocket icon" className="w-5 h-5" />
+            <img
+              src="./Icons/RocketLaunch.svg"
+              alt="Rocket icon"
+              className="w-5 h-5"
+            />
             <p className="xl:text-[18px]">Get started</p>
           </Button>
 
@@ -28,7 +32,7 @@ const Hero = () => {
 
         <Card>
           <img
-            src={HeroImg}
+            src="./Images/Hero-img.png"
             alt="Digital painting of a samurai astronaut looking into sky."
             className="w-full h-3/4 object-cover"
           />
@@ -37,7 +41,11 @@ const Hero = () => {
               Space Walking
             </h5>
             <div className="flex items-center gap-3">
-              <img src={AnimaKid} alt="AnimaKid user profil" className="w-6" />
+              <img
+                src="./Images/Avatars/Avatar14.png"
+                alt="AnimaKid user profil"
+                className="w-6"
+              />
               <p className="text-[14px] text-white font-work opacity-80">
                 AnimaKid
               </p>
@@ -48,7 +56,11 @@ const Hero = () => {
           filled={true}
           className="opacity-100 flex w-full mt-12 md:hidden"
         >
-          <img src={RocketLaunch} alt="Rocket icon" className="w-5 h-5" />
+          <img
+            src="./Icons/RocketLaunch.svg"
+            alt="Rocket icon"
+            className="w-5 h-5"
+          />
           <p className="xl:text-[18px]">Get started</p>
         </Button>
 
