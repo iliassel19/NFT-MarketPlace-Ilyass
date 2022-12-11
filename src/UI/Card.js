@@ -6,7 +6,7 @@ const Card = (props) => {
       className={`bg-bgSec overflow-hidden rounded-[20px] w-full flex flex-col ${
         props?.className ? props.className : ""
       }`}
-      key={props?.key ? props.key : ""}
+      key={props?.id ? props.id : ""}
     >
       {props.children}
     </div>

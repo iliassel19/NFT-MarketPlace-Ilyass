@@ -3,7 +3,7 @@ import Card from "../../UI/Card";
 
 const CreatorCard = (props) => {
   return (
-    <Card className="group transition-colors hover:bg-cta" key={props.key}>
+    <Card className="group transition-colors hover:bg-cta" id={props.id}>
       <div className="w-full h-full flex flex-row gap-4 xl:flex-col items-center px-6 py-4 relative cursor-pointer">
         <p
           className="bg-bg font-space text-captionc text-caption w-5 h-5 rounded-full grid place-content-center absolute top-6 left-5 

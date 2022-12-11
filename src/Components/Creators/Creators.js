@@ -19,62 +19,62 @@ import CreatorCard from "./CreatorCard";
 const Creators = () => {
   const users = [
     {
-      id: 1,
+      id: "c1",
       user: "Keepitreal",
       profil: { Avatar1 },
     },
     {
-      id: 2,
+      id: "c2",
       user: "DigiLab",
       profil: { Avatar2 },
     },
     {
-      id: 3,
+      id: "c3",
       user: "GravityOne",
       profil: { Avatar3 },
     },
     {
-      id: 4,
+      id: "c4",
       user: "Juanie",
       profil: { Avatar4 },
     },
     {
-      id: 5,
+      id: "c5",
       user: "BlueWhale",
       profil: { Avatar5 },
     },
     {
-      id: 6,
+      id: "c6",
       user: "Mr Fox",
       profil: { Avatar6 },
     },
     {
-      id: 7,
+      id: "c7",
       user: "Shroomie",
       profil: { Avatar7 },
     },
     {
-      id: 8,
+      id: "c8",
       user: "Robotica",
       profil: { Avatar8 },
     },
     {
-      id: 9,
+      id: "c9",
       user: "RustyRobot",
       profil: { Avatar9 },
     },
     {
-      id: 10,
+      id: "c10",
       user: "AnimaKid",
       profil: { Avatar14 },
     },
     {
-      id: 11,
+      id: "c11",
       user: "Dotgu",
       profil: { Avatar15 },
     },
     {
-      id: 12,
+      id: "c12",
       user: "Ghiblier",
       profil: { Avatar17 },
     },
@@ -98,11 +98,11 @@ const Creators = () => {
           />
           <p>View rankings</p>
         </Button>
-        {users.map((user) => (
+        {users.map((user, i) => (
           <CreatorCard
             key={user.id}
             profil={[...Object.values(user.profil)]}
-            id={user.id}
+            id={i + 1}
             user={user.user}
           />
         ))}

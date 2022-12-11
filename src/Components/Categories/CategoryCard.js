@@ -1,16 +1,15 @@
 import React from "react";
 import Card from "../../UI/Card";
 const CategoryCard = (props) => {
-  console.log(props.icon);
   return (
-    <Card className="" key={props.key}>
+    <Card key={props.id}>
       <div className="w-full relative shadow-lg">
         <img
           src={props.img}
           alt={`${props.category} NFT`}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover blur-sm"
         />
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center bg-bg bg-opacity-10 backdrop-blur-sm">
+        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center">
           <img src={props.icon} alt={`${props.iconAlt} icon`} />
         </div>
       </div>
