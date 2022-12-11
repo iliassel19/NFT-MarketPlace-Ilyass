@@ -18,17 +18,17 @@ const Navigation = () => {
         onClick={mobileMenuHandler}
       >
         <span
-          className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-100 ${
+          className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-200 ${
             openNav ? "w-full top-1/2 rotate-[135deg]" : "top-2 w-3/4 rotate-0"
           }`}
         ></span>
         <span
           className={`block w-full h-[2px] bg-white origin-left absolute top-1/2 transition-all duration-200 ${
-            openNav ? "left-[100%] opacity-0" : "left-0 opacity-100"
+            openNav ? "left-[100%] opacity-0" : "left-0 opacity-100 delay-300"
           }`}
         ></span>
         <span
-          className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-100 ${
+          className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-200 ${
             openNav ? "w-full top-1/2 rotate-[-135deg]" : "top-7 w-3/4 rotate-0"
           }`}
         ></span>
