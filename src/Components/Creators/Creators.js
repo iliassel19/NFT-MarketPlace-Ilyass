@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../UI/Container";
 import Button from "../../UI/Button";
 import RocketLaunch from "../../Icons/RocketLaunch1.svg";
+import CreatorCard from "./CreatorCard";
 import Avatar1 from "../../Images/Avatars/Avatar1.png";
 import Avatar2 from "../../Images/Avatars/Avatar2.png";
 import Avatar3 from "../../Images/Avatars/Avatar3.png";
@@ -14,7 +15,6 @@ import Avatar9 from "../../Images/Avatars/Avatar9.png";
 import Avatar14 from "../../Images/Avatars/Avatar14.png";
 import Avatar15 from "../../Images/Avatars/Avatar15.png";
 import Avatar17 from "../../Images/Avatars/Avatar17.png";
-import CreatorCard from "./CreatorCard";
 
 const Creators = () => {
   const users = [
