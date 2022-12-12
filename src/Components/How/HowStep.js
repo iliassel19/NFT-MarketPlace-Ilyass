@@ -10,7 +10,7 @@ const HowStep = (props) => {
           className="w-1/3 md:w-auto md:h-auto"
         />
         <div className="flex flex-col md:items-center gap-4 font-work">
-          <h4 className="text-[20px] lg:text-h5 text-white  capitalize">
+          <h4 className="text-[20px] font-semibold lg:text-h5 text-white capitalize">
             {props.heading}
           </h4>
           <p className="text-white text-[14px] sm:text-base md:text-center opacity-70">
