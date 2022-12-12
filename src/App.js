@@ -6,6 +6,7 @@ import Creators from "./Components/Creators/Creators";
 import Categories from "./Components/Categories/Categories";
 import NFTs from "./Components/NFTs/NFTs";
 import Auction from "./Components/Auction/Auction";
+import How from "./Components/How/How";
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
       <Categories />
       <NFTs />
       <Auction />
+      <How />
     </>
   );
 };
