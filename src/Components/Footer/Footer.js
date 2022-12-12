@@ -19,31 +19,31 @@ const Footer = () => {
             <ul className="flex items-center gap-2">
               <li className="opacity-40">
                 <button>
-                  <img src="./Icons/DiscordLogo.svg" />
+                  <img src="./Icons/DiscordLogo.svg" alt="Discord Logo" />
                 </button>
               </li>
 
               <li className="opacity-40">
                 <button>
-                  <img src="./Icons/YoutubeLogo.svg" />
+                  <img src="./Icons/YoutubeLogo.svg" alt="Youtube Logo" />
                 </button>
               </li>
               <li className="opacity-40">
                 <button>
-                  <img src="./Icons/TwitterLogo.svg" />
+                  <img src="./Icons/TwitterLogo.svg" alt="Twitter Logo" />
                 </button>
               </li>
 
               <li className="opacity-40">
                 <button>
-                  <img src="./Icons/InstagramLogo.svg" />
+                  <img src="./Icons/InstagramLogo.svg" alt="Instagram Logo" />
                 </button>
               </li>
             </ul>
           </div>
         </div>
         <div>
-          <h3 className="text-white text-[18px] font-semibold font-space mdtext-h5 mb-6">
+          <h3 className="text-white text-[18px] font-semibold font-space md:text-h5 mb-6">
             Explore
           </h3>
           <ul className="flex flex-col items-start gap-4">
