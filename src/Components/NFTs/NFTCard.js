@@ -3,7 +3,11 @@ import Card from "../../UI/Card";
 
 const NFTCard = (props) => {
   return (
-    <Card className={`${props?.className ? props.className : ""}`}>
+    <Card
+      className={`${
+        props?.className ? props.className : ""
+      } cursor-pointer transition-transform hover:scale-105`}
+    >
       <img src={props.img} alt={`${props.title} NFT.`} />
       <div className="py-4 px-6">
         <h3 className="text-h5 text-white font-work font-medium capitalize mb-3">
