@@ -42,6 +42,9 @@ module.exports = {
       animation: {
         show: "show 1s cubic-bezier(0.87, 0, 0.13, 1) forwards",
       },
+      backgroundImage: {
+        auction: "url('../public/Images/Primary-Mushroom-img.png')",
+      },
     },
   },
   plugins: [],

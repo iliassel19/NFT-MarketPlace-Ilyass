@@ -2,9 +2,6 @@ import React from "react";
 import Container from "../../UI/Container";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
-// import RocketLaunch from "../../Icons/RocketLaunch.svg";
-// import HeroImg from "../../Images/Hero-img.png";
-// import AnimaKid from "../../Images/Avatars/Avatar14.png";
 import HeroStates from "./HeroStates";
 const Hero = () => {
   return (

@@ -1,15 +1,6 @@
 import React from "react";
 import Container from "../../UI/Container";
 import TrendingCollection from "./TrendingCollection";
-// import PrimaryAnimalImg from "../../Images/Primary-Animal-img.png";
-// import SecondaryAnimalImg from "../../Images/Secondary-Animal-img.png";
-// import TertiaryAnimalImg from "../../Images/Tertiary-Animal-img.png";
-// import PrimaryMushroomImg from "../../Images/Primary-Mushroom-img.png";
-// import SecondaryMushroomImg from "../../Images/Secondary-Mushroom-img.png";
-// import TertiaryMushroomImg from "../../Images/Tertiary-Mushroom-img.png";
-// import PrimaryRobotImg from "../../Images/Primary-Robot-img.png";
-// import SecondaryRobotImg from "../../Images/Secondary-Robot-img.png";
-// import TertiaryRobotImg from "../../Images/Tertiary-Robot-img.png";
 const Trending = () => {
   return (
     <Container>

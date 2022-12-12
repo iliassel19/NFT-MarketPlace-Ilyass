@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationItem from "./NavigationItem";
 import Button from "../../UI/Button";
-// import User from "../../Icons/User.svg";
+
 const NavigationList = (props) => {
   return (
     <nav

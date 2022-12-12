@@ -1,22 +1,7 @@
 import React from "react";
 import Container from "../../UI/Container";
 import CategoryCard from "./CategoryCard";
-// import ArtImg from "../../Images/Art-img.png";
-// import CollectiblesImg from "../../Images/Collectibles-img.png";
-// import MusicImg from "../../Images/Music-img.png";
-// import PhotographyImg from "../../Images/Photography-img.png";
-// import VideoImg from "../../Images/Video-img.png";
-// import UtilityImg from "../../Images/Utility-img.png";
-// import SportImg from "../../Images/Sport-img.png";
-// import VirtualWorldsImg from "../../Images/VirtualWorlds-img.png";
-// import Camera from "../../Icons/Camera.svg";
-// import Basketball from "../../Icons/Basketball.svg";
-// import MusicNotes from "../../Icons/MusicNotes.svg";
-// import VideoCamera from "../../Icons/VideoCamera.svg";
-// import Planet from "../../Icons/Planet.svg";
-// import PaintBrush from "../../Icons/PaintBrush.svg";
-// import MagicWand from "../../Icons/MagicWand.svg";
-// import Swatches from "../../Icons/Swatches.svg";
+
 const Categories = () => {
   const categories = [
     {

@@ -5,6 +5,7 @@ import Trending from "./Components/Trending/Trending";
 import Creators from "./Components/Creators/Creators";
 import Categories from "./Components/Categories/Categories";
 import NFTs from "./Components/NFTs/NFTs";
+import Auction from "./Components/Auction/Auction";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
       <Creators />
       <Categories />
       <NFTs />
+      <Auction />
     </>
   );
 };

@@ -2,13 +2,6 @@ import React from "react";
 import Button from "../../UI/Button";
 import Container from "../../UI/Container";
 import NFTCard from "./NFTCard";
-// import Eye from "../../Icons/Eye.svg";
-// import Avatar10 from "../../Images/Avatars/Avatar10.png";
-// import Avatar15 from "../../Images/Avatars/Avatar15.png";
-// import Avatar16 from "../../Images/Avatars/Avatar16.png";
-// import AstrofictionImg from "../../Images/Astrofiction-img.png";
-// import DistantGalaxyImg from "../../Images/DistantGalaxy-img.png";
-// import LifeEdenaImg from "../../Images/LifeEdena-img.png";
 
 const NFTData = [
   {
