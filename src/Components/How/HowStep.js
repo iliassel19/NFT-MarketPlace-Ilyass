@@ -9,7 +9,7 @@ const HowStep = (props) => {
           alt={`${props.heading} icon`}
           className="w-1/3 md:w-auto md:h-auto"
         />
-        <div className="flex flex-col md:items-center gap-4 font-work">
+        <div className="flex flex-col md:items-center gap-2 md:gap-4 font-work">
           <h4 className="text-[20px] font-semibold lg:text-h5 text-white capitalize">
             {props.heading}
           </h4>
