@@ -8,6 +8,7 @@ import NFTs from "./Components/NFTs/NFTs";
 import Auction from "./Components/Auction/Auction";
 import How from "./Components/How/How";
 import FormContainer from "./Components/Form/FormContainer";
+import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const App = () => {
       <Auction />
       <How />
       <FormContainer />
+      <Footer />
     </>
   );
 };
