@@ -2,6 +2,25 @@ import { React, useState, useEffect } from "react";
 import NavigationList from "./NavigationList";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+
+const hamburger = {
+  hidden: {},
+  show: {
+    transition: {
+      duration: 1,
+      delay: 1.2,
+      staggerChildren: 0.15,
+    },
+  },
+};
+const hamburgerLine = {
+  hidden: {
+    scale: 0,
+  },
+  show: {
+    scale: 1,
+  },
+};
 const Navigation = () => {
   let location = useLocation();
 
@@ -35,22 +54,28 @@ const Navigation = () => {
       </Link>
       <NavigationList menuState={openNav} />
 
-      <button
+      <motion.button
+        initial="hidden"
+        animate="show"
+        variants={hamburger}
         className="z-40 w-9 h-9 relative overflow-hidden min-[900px]:hidden"
         onClick={mobileMenuHandler}>
-        <span
+        <motion.span
+          variants={hamburgerLine}
           className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-200 ${
             openNav ? "w-full top-1/2 rotate-[135deg]" : "top-2 w-3/4 rotate-0"
-          }`}></span>
-        <span
+          }`}></motion.span>
+        <motion.span
+          variants={hamburgerLine}
           className={`block w-full h-[2px] bg-white origin-left absolute top-1/2 transition-all duration-200 ${
             openNav ? "left-[100%] opacity-0" : "left-0 opacity-100 delay-300"
-          }`}></span>
-        <span
+          }`}></motion.span>
+        <motion.span
+          variants={hamburgerLine}
           className={`block  h-[2px] bg-white absolute left-0 transition-all duration-200 delay-200 ${
             openNav ? "w-full top-1/2 rotate-[-135deg]" : "top-7 w-3/4 rotate-0"
-          }`}></span>
-      </button>
+          }`}></motion.span>
+      </motion.button>
     </div>
   );
 };

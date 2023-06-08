@@ -2,10 +2,22 @@ import React from "react";
 import NavigationItem from "./NavigationItem";
 import UserIcon from "../Icons/UserIcon";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 const NavigationList = (props) => {
   return (
-    <nav
+    <motion.nav
+      initial={{
+        y: -100,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.4,
+        delay: 0.8,
+      }}
       className={`z-20 absolute left-0 w-full h-[340px] bg-bgSec min-[900px]:bg-bg min-[900px]:h-auto min-[900px]:relative min-[900px]:w-auto transition-all duration-500 ${
         !props.menuState ? "top-[-100%]" : "top-0"
       }`}>
@@ -24,7 +36,7 @@ const NavigationList = (props) => {
           <p>Sign up</p>
         </Link>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
