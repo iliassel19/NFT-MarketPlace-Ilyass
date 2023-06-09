@@ -26,7 +26,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        auction: "url('/Assets/Images/Primary-Mushroom-img.png')",
+        auction: "url('./Assets/Images/Primary-Mushroom-img-3.png')",
+        "auction-tab": "url('/Assets/Images/Primary-Mushroom-img-2.png')",
+        "auction-phone": "url('./Assets/Images/Primary-Mushroom-img.png')",
       },
     },
   },

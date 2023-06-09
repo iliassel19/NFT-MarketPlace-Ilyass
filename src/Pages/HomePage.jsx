@@ -6,7 +6,7 @@ import NFTs from "../Components/NFTs/NFTs";
 import Auction from "../Components/Auction/Auction";
 import How from "../Components/How/How";
 import FormContainer from "../Components/Form/FormContainer";
-
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <>

@@ -34,12 +34,26 @@ export const creators = [
     user: "Mr Fox",
     name: "Kianna donin",
     profil: "/Assets/Images/Avatars/Avatar6.png",
+    nfts: [
+      {
+        id: "mrfox1",
+        img: "/Assets/Images/Tertiary-Animal-img.png",
+        title: "Designer bear",
+      },
+    ],
   },
   {
     id: "7",
     user: "Shroomie",
     name: "Phillip lipshutz",
     profil: "/Assets/Images/Avatars/Avatar7.png",
+    nfts: [
+      {
+        id: "shroomie1",
+        title: "Magic mushroom 0325",
+        img: "/Assets/Images/Secondary-Mushroom-img.png",
+      },
+    ],
   },
   {
     id: "8",
@@ -118,5 +132,95 @@ export const creators = [
     user: "Ghiblier",
     name: "Terry dowrat",
     profil: "/Assets/Images/Avatars/Avatar20.png",
+  },
+];
+export const categories = [
+  {
+    id: 1,
+    category: "art",
+    icon: "/Assets/Icons/PaintBrush.svg",
+    img: "/Assets/Images/Art-img.png",
+  },
+  {
+    id: 2,
+    category: "collectibles",
+    icon: "/Assets/Icons/Swatches.svg",
+    img: "/Assets/Images/Collectibles-img.png",
+  },
+  {
+    id: 3,
+    category: "music",
+    icon: "/Assets/Icons/MusicNotes.svg",
+    img: "/Assets/Images/Music-img.png",
+  },
+  {
+    id: 4,
+    category: "photography",
+    icon: "/Assets/Icons/Camera.svg",
+    img: "/Assets/Images/Photography-img.png",
+  },
+  {
+    id: 5,
+    category: "video",
+    icon: "/Assets/Icons/VideoCamera.svg",
+    img: "/Assets/Images/Video-img.png",
+  },
+  {
+    id: 6,
+    category: "utility",
+    icon: "/Assets/Icons/MagicWand.svg",
+    img: "/Assets/Images/Utility-img.png",
+  },
+  {
+    id: 7,
+    category: "sport",
+    icon: "/Assets/Icons/Basketball.svg",
+    img: "/Assets/Images/Sport-img.png",
+  },
+  {
+    id: 8,
+    category: "virtual worlds",
+    icon: "/Assets/Icons/Planet.svg",
+    img: "/Assets/Images/VirtualWorlds-img.png",
+  },
+];
+export const NFTData = [
+  {
+    title: "Distant Galaxy",
+    img: "/Assets/Images/DistantGalaxy-img.png",
+    profil: "/Assets/Images/Avatars/Avatar16.png",
+    name: "MoonDancer",
+    className: "",
+  },
+  {
+    title: "Life On Edena",
+    img: "/Assets/Images/LifeEdena-img.png",
+    profil: "/Assets/Images/Avatars/Avatar10.png",
+    name: "NebulaKid",
+    className: "",
+  },
+  {
+    title: "AstroFiction",
+    img: "/Assets/Images/Astrofiction-img.png",
+    profil: "/Assets/Images/Avatars/Avatar15.png",
+    name: "Spaceone",
+    className: "sm:hidden min-[900px]:flex",
+  },
+];
+export const howSteps = [
+  {
+    icon: "/Assets/Icons/SetupWalletIcon.svg",
+    heading: "Setup your wallet",
+    text: "Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+  },
+  {
+    icon: "/Assets/Icons/CreateCollectionIcon.svg",
+    heading: "Create collection",
+    text: "Upload your work and setup your collection. Add a description, social links and floor price.",
+  },
+  {
+    icon: "/Assets/Icons/StartEarningIcon.svg",
+    heading: "Start earning",
+    text: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
   },
 ];
